@@ -17,11 +17,11 @@ def get_driver():
     driver.get("https://automated.pythonanywhere.com")
     return driver
 
+
 def main():
     driver = get_driver()
     element = driver.find_element(by="xpath", value="/html/body/div[1]/div/h1[1]")
     return element.text
 
+
 print(main())
-
-
